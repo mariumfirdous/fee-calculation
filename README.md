@@ -14,8 +14,10 @@ this helps in calculating exam or application fee of a student based on the json
 
 ##Setup
 
-First you need to install node.js(version used- 14.15.5) and npm in your system, then run"ng new Project_name" to create a new project. After creating the project, replace "src" and "package.json" of the project with this one and then run "npm i" in your project folder to install all the required dependencies(bootstrap, formsModule).
-Once all the dependencies are installed, you can run "ng s" or "ng serve" to run the application.
+- First you need to install node.js(version used- 14.15.5) and npm in your system, then run"ng new Project_name" to create a new project. 
+- After creating the project, replace "src" and "package.json" of the project with this one.
+- Then run "npm i" in your project folder to install all the required dependencies(bootstrap, formsModule).
+- Once all the dependencies are installed, you can run "ng s" or "ng serve" to run the application.
 
 ##Assumptions
 
