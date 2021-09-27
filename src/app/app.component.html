@@ -1,0 +1,59 @@
+<div class="main">
+  <h1>Fee Calculation Page</h1>
+  <form action="/action_page.php" ><div class="row">
+
+    <div col-4></div>
+    <div col-4>Fee Type:
+      <select class="dropdown" name="fee" id="fee" [(ngModel)]="feeType" (ngModelChange)="feeTypeSelected()">
+        <option value="Exam Fee">Exam Fee</option>
+        <option value="Application Fee">Application Fee</option>
+      </select>
+    </div>
+    <div col-4></div>
+
+  </div>   
+   <div class="row">
+    <div col-4></div>
+    <div col-4>
+      Nationality:
+      <select class="dropdown" name="nation" id="nation" [(ngModel)]="nationality" (ngModelChange)="nationSelected()">
+        <option *ngFor="let a of nationalityArr" [value]="a">{{a}}</option>
+      </select>
+    </div>
+    <div col-4></div>
+   </div>
+    <div class="row">
+      <div col-4></div>
+      <div >
+        Course:
+        <select class="dropdown" name="courseType" id="courseType" [(ngModel)]="course" (ngModelChange)="courseSelected()">
+          <option hidden selected></option>
+          <option *ngFor="let a of courseArr" value="a">{{a}}</option>
+        </select>
+      </div>
+      <div col-4></div>
+    </div>
+   <div class="row">
+     <div col-4></div>
+     <div>
+      Level:
+      <select class="dropdown" name="levelType" id="levelType" [(ngModel)]="level" (ngModelChange)="levelSelected()">
+        <option *ngFor="let a of levelArr" [value]="a">{{a}}</option>
+      </select>
+    </div>
+    <div col-4></div>
+  </div>
+  <div class="row">
+    <div col-4></div>
+    <button  class="btn-primary" ngbButtonLabel (click)=showFee()>Submit</button>
+  <div col-4></div>  
+  </div>
+    <div class="row">
+      <div col-4></div>
+      <div class="showFee" *ngIf="totalFee!=0 || totalFee != undefined" col-4>
+        Total fee: Rs.{{totalFee}}
+      </div>
+    </div>
+    
+  </form>
+</div>
