@@ -30,3 +30,7 @@ this helps in calculating exam or application fee of a student based on the json
 - UI could be improved(like aligning all the items in a line and dropdowns can be done using bootstrap,etc).
 - array for dropdown can be taken from the json instead of hardcoding it.
 - option can be given to select both application and exam fee to get a total amount for both the things.
+
+##Other information
+
+- In setup, either create a project with this nae "shloka-conceptts" or you can replace the name in package.json with your project name.
